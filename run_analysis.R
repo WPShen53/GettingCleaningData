@@ -31,7 +31,7 @@ test_data$activity <- as.factor(test_labels[,1])
 total <- rbind(train_data, test_data)
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-col_vector <- grep("subject|activity|mean|std", names(total))
+col_vector <- grep("subject|activity|mean|Mean|std", names(total))
 total <- total[,col_vector]
 
 ## 3. Uses descriptive activity names to name the activities in the data set
@@ -43,4 +43,4 @@ levels(total$activity) <- activities
 avg <- total %>% group_by(subject, activity) %>% summarise_each(funs(mean))
 
 ### write to a text file
-write.table(avg, file = "w4_tidy_avg_dataset.csv", sep = ",", row.name = FALSE)
+write.table(avg, file = "w4_tidy_avg_dataset.txt", sep = ",", row.name = FALSE)
