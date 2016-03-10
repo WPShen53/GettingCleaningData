@@ -21,14 +21,11 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 More information about the files is available in `README.txt`. More information about the features is available in `features_info.txt`.
 
-### Data files that were not used
-
-This analysis was performed using only the files above, and did not use the raw signal data. Therefore, the data files in the "Inertial Signals" folders were ignored.
-
 ### Processing steps
 
-1. All of the relevant data files were read into data frames, appropriate column headers were added, and the training and test sets were combined into a single data set.
-2. All feature columns were removed that did not contain the string mean/Mean or std. This left 88 feature columns, including the subject and activity label columns.
-3. The activity column was converted from a integer to a factor, using labels describing the activities.
-4. A tidy data set was created containing the mean of each feature for each subject and each activity. Thus, subject #1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 66 features for that subject/activity combination. Since there are 30 subjects, there are a total of 180 rows.
-5. The tidy data set was output to a CSV file.
+0. All of the relevant data files were read in. the subject ID and activity of the training and test sets were added
+1. Combined the training and test sets into a single data set and the variable (features) were labeled with descriptive names.
+2. Extracted only the measurements on the mean (also, Mean) and standard deviation for each measurement.
+3. Used descriptive activity names to name the activities in the data set.
+4. Created a tidy data set.
+5. The tidy data set was output to a txt file.
