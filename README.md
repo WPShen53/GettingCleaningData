@@ -8,4 +8,4 @@ The class project for [Getting and Cleaning Data](https://www.coursera.org/cours
 2. Unzip the file to the subdirectory \UCI HAR Dataset.
 3. run the R script ([run_analysis.R](run_analysis.R)).
 
-**The output of the R script is a tidy data set, [w4_tidy_avg_dataset.txt](w4_tidy_avg_dataset.csv).**
+**The output of the R script is a tidy data set, [w4_tidy_avg_dataset.txt](w4_tidy_avg_dataset.txt).**
