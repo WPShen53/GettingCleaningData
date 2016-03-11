@@ -25,7 +25,7 @@ More information about the files is available in `README.txt`. More information 
 
 0. All of the relevant data files were read in. the subject ID and activity of the training and test sets were added
 1. Combined the training and test sets into a single data set and the variable (features) were labeled with descriptive names.
-2. Extracted only the measurements on the mean (also, Mean) and standard deviation for each measurement.
+2. Extracted only the measurements on the mean (label content mean or Mean) and standard deviation (std) for each measurement.
 3. Used descriptive activity names to name the activities in the data set.
 4. Created a tidy data set.
 5. The tidy data set was output to a txt file.
